@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    /* height: 100vh; */
+    max-width: 100%;
+}
+
+.card {
+    width: 70%;
+    height: auto;
+    background-color: hsl(244, 38%, 16%);
+    margin: 10% auto 5%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left-side {
+    width: 45%;
+    padding: 3% 5%;
+}
+
+.image {
+    width: 55%;
+    background: linear-gradient(90deg, rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)),
+    url('./images/image-header-desktop.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.image img {
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 ~ p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 16%;
+    width: 80%;
+    padding-top: 7%;
+}
+
+.stat-row {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 86%;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.stat-row p {
+    margin: 0%;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 14px;
+    margin-bottom: 8%;
+}
+
+@media (max-width: 426px) {
+    .card {
+        width: 89%;
+        flex-direction: column-reverse;
+        margin: 20% auto 10%;
+        border-radius: 20px;
+    }
+    .image {
+        height: 200px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .left-side {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0%;
+    }
+    .left-side h1 {
+        width: 80%;
+        margin: 8% auto 4%;
+    }
+    h1 ~ p {
+        width: 65%;
+        margin: 0 auto 4%;
+    }
+    .stat-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .stat-row p {
+        margin-bottom: 8%;
+        margin-top: 10px;
+    }
+    .attribution {
+        margin-bottom: 20px;
+    }
+}
